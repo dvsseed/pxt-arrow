@@ -1,4 +1,4 @@
-# arrows
+# arrow
 
 Custom blocks for PXT to show the arrows on TaiBit's LED matrix.
 
@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-arrows=github:dvsseed/pxt-arrows
+arrow=github:dvsseed/pxt-arrow
 ```
