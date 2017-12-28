@@ -1,5 +1,5 @@
 {
-    "name": "arrow",
+    "name": "showarrow",
     "version": "0.1.0",
     "description": "Custom blocks for PXT to show the arrows on TaiBit's LED matrix",
     "license": "MIT",
@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/arrow-strings.json"
+        "_locales/zh/showarrow-strings.json"
     ],
     "testFiles": [
         "test.ts"
