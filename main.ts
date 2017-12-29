@@ -16,7 +16,6 @@ namespace TaiBit {
     //% weight=100
     //% blockId="id_showArrow"
     //% block="show arrows direction|%mode|speed display(ms)|%speed"
-    //% advanced=true
     export function fn_showArrow(mode: Directions, speed: number): void {
         if (mode == 1) {
             images.arrowImage(ArrowNames.North).showImage(0)
