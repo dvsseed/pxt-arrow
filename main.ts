@@ -16,13 +16,6 @@ namespace TaiBit {
     //% weight=100 blockId="id_showArrow" block="show arrows direction | %mode | speed display(ms) | %speed"
     export function fn_showArrow(mode: Directions, speed: number): void {
         if (mode == 1) {
-            for (let item in ArrowNames) {
-                if (isNaN(Number(item))) {
-                    images.arrowImage(item).showImage(0)
-                    basic.pause(speed)
-                }
-            }
-            /**
             images.arrowImage(ArrowNames.North).showImage(0)
             basic.pause(speed)
             images.arrowImage(ArrowNames.NorthEast).showImage(0)
@@ -39,7 +32,6 @@ namespace TaiBit {
             basic.pause(speed)
             images.arrowImage(ArrowNames.NorthWest).showImage(0)
             basic.pause(speed)
-            **/
         } else {
             images.arrowImage(ArrowNames.NorthWest).showImage(0)
             basic.pause(speed)
