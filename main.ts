@@ -7,7 +7,18 @@ namespace TaiBit {
         Clockwise = 0x1,
         CounterClockwise = 0x2
     }
- 
+
+    export enum Arrows {
+        1 = ArrowNames.North,
+        2 = ArrowNames.NorthEast,
+        3 = ArrowNames.East,
+        4 = ArrowNames.SouthEast,
+        5 = ArrowNames.South,
+        6 = ArrowNames.SouthWest,
+        7 = ArrowNames.West,
+        8 = ArrowNames.NorthWest
+    }
+
     /**
       * Show arrows clockwise or counterclockwise
       * @param mode describe parameter here, eg: Clockwise, CounterClockwise
@@ -16,6 +27,11 @@ namespace TaiBit {
     //% weight=100 blockId="id_showArrow" block="show arrows direction | %mode | speed display(ms) | %speed"
     export function fn_showArrow(mode: Directions, speed: number): void {
         if (mode == 1) {
+            for (let i = 1; i < 9; i++) {
+                images.arrowImage(Arrows[i]).showImage(0)
+                basic.pause(speed)
+            }
+            /**
             images.arrowImage(ArrowNames.North).showImage(0)
             basic.pause(speed)
             images.arrowImage(ArrowNames.NorthEast).showImage(0)
@@ -32,6 +48,7 @@ namespace TaiBit {
             basic.pause(speed)
             images.arrowImage(ArrowNames.NorthWest).showImage(0)
             basic.pause(speed)
+            */
         } else {
             images.arrowImage(ArrowNames.NorthWest).showImage(0)
             basic.pause(speed)
